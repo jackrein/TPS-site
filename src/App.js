@@ -6,19 +6,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <span className="align-left">Zeta Chapter</span>
         <img src={logo} className="App-logo" alt="logo" />
+        <span className="align-right">Established 2018</span>
+      </header>
+      <div className="App-main">
         <p>
           Welcome to the home of Theta Pi Sigma at the University of Colorado!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn about us
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
