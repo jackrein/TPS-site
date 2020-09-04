@@ -11,34 +11,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(15px + 2vmin);
+  color: #87ceeb;
 }
 
 .App-logo {
   height: 30vmin;
   pointer-events: none;
   display: inline-block;
-  position: absolute;
+  position: relative;
 }
 
 span {
-  display: inline-block;
+  display: inline;
   position: relative;
+  text-shadow: 2px 2px 2px white;
+}
+
+#TPS {
+  font-size: calc(15px + 3vmin);
+}
+
+em {
+  text-shadow: none;
+  color: white;
+  font-size: calc(10px + 1vmin);
 }
 
 .align-left {
   align-self: flex-start;
-  padding-left: 12.5vh;
-  padding-bottom: 5vh;
+  left: 3vh;
 }
 
 .align-right {
   align-self: flex-end;
-  padding-right: 12.5vh;
-  padding-top: 5vh;
+  right: 3vh;
 }
 
 .App-main {
-  min-height: 70vh;
+  min-height: 65vh;
+}
+
+#intro {
+  font-size: calc(10px + 2vmin);
+  text-shadow: 2px 2px 2px white;
 }
