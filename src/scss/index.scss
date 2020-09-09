@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('OpenDyslexic'), url(../fonts/OpenDyslexic3-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'OpenDyslexic', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

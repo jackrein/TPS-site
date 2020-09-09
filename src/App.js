@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './TPS_Crest.svg';
-import './App.css';
 import { Nav, Navbar } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/App.scss';
 
 function App() {
   return (
@@ -18,18 +17,18 @@ function App() {
           <em>established 2018</em>
         </span>
       </header>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="#87ceeb" variant="#414141" className="nav-link">
         <Navbar.Brand href="#home">
           <img
-            src="/TPS_Crest.png"
-            width="30"
-            height="30"
+            src="/TPS_Logo1.png"
+            width="auto"
+            height="50"
             className="d-inline-block align-top"
             alt="Theta Pi Sigma Crest"
           />
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+        <Nav className="mr-auto nav-link">
+          <Nav.Link href="#about">About Us</Nav.Link>
           <Nav.Link href="#events">Events</Nav.Link>
           <Nav.Link href="#gallery">Gallery</Nav.Link>
           <Nav.Link href="#links">Links</Nav.Link>
