@@ -2,6 +2,12 @@ import React from 'react';
 import logo from './TPS_Crest.svg';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './scss/App.scss';
+import Home from './components/Home';
+import About from './components/About';
+import Events from './components/Events';
+import Gallery from './components/Gallery';
+import Links from './components/Links';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -71,56 +77,6 @@ function App() {
           </Switch>
         </div>
       </Router>
-    </div>
-  );
-}
-
-function Home() {
-  return (
-    <div className="App-main">
-      <p id="intro">
-        Welcome to the home of <b>Theta Pi Sigma</b> at the University of Colorado!
-      </p>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About Us</h2>
-    </div>
-  );
-}
-
-function Events() {
-  return (
-    <div>
-      <h2>Events</h2>
-    </div>
-  );
-}
-
-function Gallery() {
-  return (
-    <div>
-      <h2>Gallery</h2>
-    </div>
-  );
-}
-
-function Links() {
-  return (
-    <div>
-      <h2>Links</h2>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <h2>Contact Us</h2>
     </div>
   );
 }
