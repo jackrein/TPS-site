@@ -1,6 +1,84 @@
-a.nav-link {
+.App {
+  text-align: center;
+  background-color: #87ceeb;
+  color: #414141;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #414141;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(15px + 2vmin);
+  color: #87ceeb;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  display: inline-block;
+  position: static;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  text-shadow: 2px 2px 2px white;
+}
+
+#TPS {
+  font-size: calc(15px + 3vmin);
+}
+
+em {
+  text-shadow: none;
+  color: white;
+  font-size: calc(10px + 1vmin);
+}
+
+.align-left {
+  align-self: flex-start;
+  left: 3vh;
+}
+
+.align-right {
+  align-self: flex-end;
+  right: 3vh;
+}
+
+a.nav-link, li a {
   color: #414141;
   font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+}
+
+li {
+  float: left;
+  display: block;
+  position: relative;
+  padding-right: 5vh;
+  top: 1.5vh;
+}
+
+#logo {
+  top: .5vh;
+}
+
+.App-main {
+  min-height: 65vh;
+  position: relative;
+  display: block;
+  top: 5vh;
+}
+
+#intro {
+  font-size: calc(10px + 2vmin);
+  text-shadow: 2px 2px 2px white;
 }
 
 @import "~bootstrap/scss/bootstrap";

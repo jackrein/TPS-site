@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './TPS_Crest.svg';
-import { Nav, Navbar } from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './scss/App.scss';
 
 function App() {
@@ -17,29 +17,110 @@ function App() {
           <em>established 2018</em>
         </span>
       </header>
-      <Navbar bg="#87ceeb" variant="#414141" className="nav-link">
-        <Navbar.Brand href="#home">
-          <img
-            src="/TPS_Logo1.png"
-            width="auto"
-            height="50"
-            className="d-inline-block align-top"
-            alt="Theta Pi Sigma Crest"
-          />
-        </Navbar.Brand>
-        <Nav className="mr-auto nav-link">
-          <Nav.Link href="#about">About Us</Nav.Link>
-          <Nav.Link href="#events">Events</Nav.Link>
-          <Nav.Link href="#gallery">Gallery</Nav.Link>
-          <Nav.Link href="#links">Links</Nav.Link>
-          <Nav.Link href="#contact">Contact Us</Nav.Link>
-        </Nav>
-      </Navbar>
-      <div className="App-main">
-        <p id="intro">
-          Welcome to the home of <b>Theta Pi Sigma</b> at the University of Colorado!
-        </p>
-      </div>
+      <Router>
+        <div>
+          <ul>
+            <li id="logo">
+              <img
+                src="/TPS_Logo1.png"
+                width="auto"
+                height="50"
+                className="d-inline-block align-top"
+                alt="Theta Pi Sigma Crest"
+              />
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/events">Events</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/links">Links</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+          </ul>
+
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/events">
+              <Events />
+            </Route>
+            <Route path="/gallery">
+              <Gallery />
+            </Route>
+            <Route path="/links">
+              <Links />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <div className="App-main">
+      <p id="intro">
+        Welcome to the home of <b>Theta Pi Sigma</b> at the University of Colorado!
+      </p>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About Us</h2>
+    </div>
+  );
+}
+
+function Events() {
+  return (
+    <div>
+      <h2>Events</h2>
+    </div>
+  );
+}
+
+function Gallery() {
+  return (
+    <div>
+      <h2>Gallery</h2>
+    </div>
+  );
+}
+
+function Links() {
+  return (
+    <div>
+      <h2>Links</h2>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div>
+      <h2>Contact Us</h2>
     </div>
   );
 }
