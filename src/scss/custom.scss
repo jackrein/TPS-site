@@ -8,17 +8,21 @@
   text-align: center;
   background-color: #414141;
   min-height: 35vh;
-  display: flex;
+  display: block;
   flex-direction: column;
   font-size: calc(15px + 2vmin);
   color: #87ceeb;
+  position: relative;
 }
 
 .App-logo {
   height: 30vmin;
   pointer-events: none;
   display: inline-block;
-  position: static;
+  position: relative;
+  top: 1.5vh;
+  left: auto;
+  right: auto;
 }
 
 span {
@@ -38,13 +42,14 @@ em {
 }
 
 .align-left {
-  align-self: flex-start;
-  left: 3vh;
+  float: left;
+  left: 2vh;
 }
 
 .align-right {
-  align-self: flex-end;
-  right: 3vh;
+  float: right;
+  right: 2vh;
+  top: 22vh;
 }
 
 a.nav-link, li a {
@@ -63,10 +68,12 @@ li {
   position: relative;
   padding-right: 5vh;
   top: 1.5vh;
+  left: -5vh;
 }
 
 #logo {
   top: .5vh;
+  left: -2vh;
 }
 
 .App-main {

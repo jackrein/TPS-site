@@ -24,58 +24,57 @@ function App() {
         </span>
       </header>
       <Router>
-        <div>
-          <ul>
-            <li id="logo">
-              <img
-                src="/TPS_Logo1.png"
-                width="auto"
-                height="50"
-                className="d-inline-block align-top"
-                alt="Theta Pi Sigma Crest"
-              />
-            </li>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="/events">Events</Link>
-            </li>
-            <li>
-              <Link to="/gallery">Gallery</Link>
-            </li>
-            <li>
-              <Link to="/links">Links</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </ul>
-
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/events">
-              <Events />
-            </Route>
-            <Route path="/gallery">
-              <Gallery />
-            </Route>
-            <Route path="/links">
-              <Links />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
-        </div>
+        <ul>
+          <li id="logo">
+            <img
+              src="/TPS_Logo1.png"
+              width="auto"
+              height="50"
+              alt="Theta Pi Sigma Logo"
+            />
+          </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/events">Events</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/links">Links</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/events">
+            <Events />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+          <Route path="/links">
+            <Links />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
