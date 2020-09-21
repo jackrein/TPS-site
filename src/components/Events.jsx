@@ -3,7 +3,7 @@ import React from 'react';
 function Events() {
   return (
     <div>
-      <h2>Events</h2>
+      <h2 className='title'>Events</h2>
     </div>
   );
 }

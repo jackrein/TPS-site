@@ -52,9 +52,15 @@ em {
   top: 22vh;
 }
 
-a.nav-link, li a {
+li a {
   color: #414141;
   font-weight: bold;
+}
+
+li a:hover {
+  color: #414141;
+  font-size: large;
+  text-decoration: none;
 }
 
 ul {
@@ -83,9 +89,14 @@ li {
   top: 5vh;
 }
 
-#intro {
+.title {
   font-size: calc(10px + 2vmin);
-  text-shadow: 2px 2px 2px white;
+  text-shadow: 2px 2px 2px #414141;
+  color: white;
+}
+
+.mainP {
+  padding: 25px 150px;
 }
 
 @import "~bootstrap/scss/bootstrap";
