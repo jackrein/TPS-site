@@ -88,19 +88,47 @@ li {
   display: block;
 }
 
-#intro {
-  position: relative;
-  top: 5vh;
-}
-
 .title {
   font-size: calc(10px + 2vmin);
   text-shadow: 2px 2px 2px #414141;
   color: white;
 }
 
+#intro {
+  position: relative;
+  top: 5vh;
+  padding: 50px;
+}
+
 .mainP {
   padding: 25px 150px;
+}
+
+.form-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  max-width: 35vw;
+  position: relative;
+  align-self: center;
+}
+
+.message {
+  min-width: 50vw;
+}
+
+#sendMessage {
+  background-color: #414141;
+  border: none;
+  padding: 10px;
+}
+
+#sendMessage:hover {
+  color: #87ceeb
 }
 
 @import "~bootstrap/scss/bootstrap";
