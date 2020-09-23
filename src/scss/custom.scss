@@ -52,12 +52,12 @@ em {
   top: 22vh;
 }
 
-li a {
+.link, li a {
   color: #414141;
   font-weight: bold;
 }
 
-li a:hover {
+.link:hover, li a:hover {
   color: #414141;
   font-size: large;
   text-decoration: none;
@@ -79,13 +79,17 @@ li {
 
 #logo {
   top: .5vh;
-  left: -2vh;
+  left: -2.5vh;
 }
 
 .App-main {
   min-height: 65vh;
   position: relative;
   display: block;
+}
+
+#intro {
+  position: relative;
   top: 5vh;
 }
 

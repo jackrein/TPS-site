@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div>
+    <div className="App-main">
       <h2 className='title'>Our Mission</h2>
       <p className='mainP'>The purpose and objective of Theta Pi Sigma
           is to strengthen Greek life by providing a
