@@ -11,6 +11,7 @@ function Links() {
       <h2 className='title'>Other Links</h2>
         <p className='mainP'>
           <a className='link' href='https://translifeline.org/hotline'>Trans Lifeline</a><br/>
+          <a className='link' href='https://www.facebook.com/thetapisigmaCU/'>Zeta Chapter on Facebook</a>
         </p>
       <h2 className='title'>Sibling Chapters</h2>
         <p className='mainP'>
