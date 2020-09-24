@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="App-main">
       <p className="title" id="intro">
-        Welcome to the home of <b>Theta Pi Sigma</b> at the University of Colorado!
+        Welcome to the home of Theta Pi Sigma at the University of Colorado!
       </p>
     </div>
   );

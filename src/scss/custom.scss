@@ -90,7 +90,8 @@ li {
 
 .title {
   font-size: calc(10px + 2vmin);
-  text-shadow: 2px 2px 2px #414141;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #414141;
   color: white;
 }
 
@@ -119,6 +120,7 @@ li {
 
 .message {
   min-width: 50vw;
+  min-height: 10vh;
 }
 
 #sendMessage {
