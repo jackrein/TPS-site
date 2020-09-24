@@ -1,7 +1,7 @@
 FROM node:current
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
+WORKDIR /tps-site
+COPY package.json yarn.lock ./
+RUN yarn install
 COPY . .
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+EXPOSE 5000
+CMD [ "nodemon", "server.js" ]
