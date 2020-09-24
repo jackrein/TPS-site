@@ -86,11 +86,11 @@ li {
   min-height: 65vh;
   position: relative;
   display: block;
+  font-weight: bold;
 }
 
 .title {
   font-size: calc(10px + 2vmin);
-  font-weight: bold;
   text-shadow: 3px 3px 2px #414141;
   color: white;
 }
