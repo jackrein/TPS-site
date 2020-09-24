@@ -1,10 +1,12 @@
 const express = require('express');
 const bp = require('body-parser');
 const cors = require('cors');
+const morgan = require('morgan');
 const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
+app.use(morgan('dev'));
 app.use(bp.json());
 app.use(bp.urlencoded({extended: false}));
 app.use(express.static('build'));

@@ -116,6 +116,7 @@ li {
   max-width: 35vw;
   position: relative;
   align-self: center;
+  box-shadow: 2px 2px 2px;
 }
 
 .message {
@@ -131,6 +132,20 @@ li {
 
 #sendMessage:hover {
   color: #87ceeb
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-gap: 1vh;
+  margin-top: 20px;
+}
+
+.image {
+  margin: 10px;
+  border: 8px #414141 ridge;
+  align-self: center;
 }
 
 @import "~bootstrap/scss/bootstrap";

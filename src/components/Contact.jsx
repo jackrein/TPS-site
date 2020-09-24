@@ -1,6 +1,5 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Alert } from 'react-bootstrap';
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +7,6 @@ class Contact extends React.Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
     emailjs.sendForm('contact_service', 'contact_form', e.target, "user_AZg4TNVXk6KjBxsSRcaGM")
   };
 
