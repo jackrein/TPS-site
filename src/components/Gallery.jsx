@@ -20,7 +20,7 @@ function Gallery() {
               fit: 'crop',
               fm: 'jpg'
             }}
-            width={600}
+            width='auto'
             height={600}
             className='image'
           />

@@ -11,10 +11,6 @@ app.use(bp.json());
 app.use(bp.urlencoded({extended: false}));
 app.use(express.static('build'));
 
-// app.get('/', (req, res) => {
-//   res.send('Hello')
-// });
-
 app.get('/express_backend', (req, res) => {
   res.send({ express: 'Your Express backend is connected to React' });
 });
