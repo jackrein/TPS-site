@@ -30,6 +30,7 @@ function About() {
         Established in the Spring of 2018, Zeta's founding members
         sought to promote radical inclusivity in Greek life.
         </p>
+        <p className='lastP'></p>
     </div>
   );
 }

@@ -21,11 +21,12 @@ function Gallery() {
               fm: 'jpg'
             }}
             width='auto'
-            height={600}
+            height={500}
             className='image'
           />
         ))}
       </div>
+      <p className='lastP'></p>
     </div>
   );
 }
